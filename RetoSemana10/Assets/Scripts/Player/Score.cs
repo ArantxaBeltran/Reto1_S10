@@ -10,6 +10,7 @@ public class Score : MonoBehaviour
      public TMP_Text score;
      public GameObject cherry;
      public MeshRenderer meshRenderercherry;
+     public GameManager winevent;
 
      public static int point;
    
@@ -17,7 +18,7 @@ public class Score : MonoBehaviour
      private void Update()
      {
         point = Dot.pointBall;
-        score.text = point.ToString();
+        score.text = ( point.ToString() + " / 15 " );
 
         if (point ==15)
         {
@@ -27,6 +28,7 @@ public class Score : MonoBehaviour
          if (point >=15 && meshRenderercherry.enabled == false) 
         {
             score.text = ("Win");
+             winevent.Win();
         }
 
     

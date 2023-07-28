@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public  GameObject playercube;
     public  GameObject  animPlayer;
      private MeshRenderer cubeplayer;
+     public GameObject winscreen;
    
 
       private void Awake()
@@ -37,6 +38,14 @@ public class GameManager : MonoBehaviour
          gameoverscreen.SetActive (true);
         
     }
+
+      public void Win()
+    {
+        
+      
+      winscreen.SetActive(true);
+        
+   }
 
 
 

@@ -8,6 +8,7 @@ public class CambiodeEscena : MonoBehaviour
     public string sceneName;
     public string sceneNameInicio;
     public GameObject escscreen;
+    public GameObject winscreen;
 
    public void  Play()
    {
@@ -47,6 +48,13 @@ public class CambiodeEscena : MonoBehaviour
         
       
       escscreen.SetActive(false);
+        
+   }
+      public void Win()
+    {
+        
+      
+      winscreen.SetActive(true);
         
    }
 
