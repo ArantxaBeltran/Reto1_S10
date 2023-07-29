@@ -80,7 +80,7 @@ public class Energy : MonoBehaviour
 
      IEnumerator ActiveEnergy()
       {
-        while (Dot.pointBall == 15)
+        while (Dot.pointBall < 15)
         {
             yield return new WaitForSeconds(5f);
             energy1.SetActive(true);
